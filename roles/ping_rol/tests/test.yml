@@ -1,5 +1,5 @@
 ---
 - name: Prueba ping rol
-  hosts: localhost
+  hosts: all
   roles:
     - ping_rol

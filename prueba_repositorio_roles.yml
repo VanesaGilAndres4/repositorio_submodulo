@@ -1,6 +1,6 @@
 ---
 - name: Prueba submodulo rol ping
-  hosts: localhost
+  hosts: all
   roles:
     - ping_rol
     - datetime_rol
