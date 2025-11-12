@@ -1,0 +1,5 @@
+---
+- name: Prueba fecha hora
+  hosts: localhost
+  roles:
+    - datetime_rol

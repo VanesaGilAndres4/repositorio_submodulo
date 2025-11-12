@@ -1,0 +1,9 @@
+---
+# Tarea 1 - Lanzar un ping para comprobar conexión
+- name: Tarea 1 - Lanzar ping nuevamente
+  ansible.builtin.ping:
+  register: ping_rol_task_result
+
+- name: Mostrar salida ping
+  ansible.builtin.debug:
+    msg: "Resultado del ping: {{ ping_rol_task_result.ping }}"

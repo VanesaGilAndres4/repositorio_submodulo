@@ -1,0 +1,16 @@
+---
+# Tarea 1 - Mostramos la hora actual del servidor
+- name: Tarea 1 - Mostrar hora actual
+  ansible.builtin.debug:
+    msg: "{{ ansible_date_time.time }}"
+  register: datetime_rol_task_result_hora
+
+# Tarea 2 - Mostramos la fecha actual del servidor
+- name: Tarea 2 - Mostrar fecha actual
+  ansible.builtin.debug:
+    msg: "{{ ansible_date_time.date }}"
+  register: datetime_rol_task_result_fecha
+
+- name: Mostrar fecha y hora
+  ansible.builtin.debug:
+    msg: "Son las {{ datetime_rol_task_result.stdout }} del dia {{ datetime_rol_task_result_fecha.stdout }}"
